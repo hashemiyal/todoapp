@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    @include('layout.nav')
+    @livewire('navbar')
     @yield('content')
     @livewireScripts
     

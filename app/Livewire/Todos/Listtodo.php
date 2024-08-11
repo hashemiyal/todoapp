@@ -33,7 +33,7 @@ class Listtodo extends Component
       $todo->completed=!$todo->completed;
       $todo->save();
     } 
-    public function btn($id){
+    public function settodoid($id){
       $this->editeid=$id;
       $this->editename=Todo::find($id)->name;
     }
@@ -47,6 +47,8 @@ class Listtodo extends Component
     public function canceltodo(){
       $this->reset('editeid','editename');
     }
+    public function settodo($todo){
+      $this->dispatch('settodo',$todo);
+    }
  
-   
 }
