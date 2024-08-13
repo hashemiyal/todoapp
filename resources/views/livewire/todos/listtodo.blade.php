@@ -44,7 +44,7 @@
                     </button>
                 </div>
             </div>
-            <span class="text-xs text-gray-500"> {{$todo->created_at}}</span>
+            <span class="text-xs text-gray-500"> <strong>{{$todo->created_at}}</strong></span>
         </div>
     </div>
     @endforeach
